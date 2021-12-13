@@ -1,0 +1,12 @@
+.root {
+  background: rgb(56, 56, 56);
+  color: rgb(255, 214, 80);
+}
+
+.row {
+  display: flex;
+}
+
+.tasklist {
+  margin-top: 15px;
+}

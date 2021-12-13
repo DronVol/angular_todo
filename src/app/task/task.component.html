@@ -1,0 +1,5 @@
+<div class='row'>
+  <input type='checkbox' [value]='check' (change)="handleChange()">
+  <div [ngClass]='{ready: check}'>{{ text }}, {{index}}</div>
+  <button (click)="onDelete()">-</button>
+</div>

@@ -1,0 +1,10 @@
+<div class="root">
+  <h1>My TO-DO v. 1.{{ version.slice(2, 4) }}.{{ version.slice(4, 7) }}</h1>
+  <div class="row">
+    <input type="text" [(ngModel)]="taskText">
+    <button (click)="addTask()" [disabled]="taskText.length === 0">+</button>
+  </div>
+  <div class="tasklist">
+    <app-task *ngFor="let task of tasks; let ind = index" [task]="task" (delete)="deleteTask($event)" [ind]='ind'></app-task>
+  </div>
+</div>
